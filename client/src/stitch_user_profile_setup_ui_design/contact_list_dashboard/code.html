@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Contacts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-[#F7F9FC]">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8edf5] px-10 py-3">
+<div class="flex items-center gap-4 text-[#131118]">
+<div class="text-3xl text-[#4A90E2]">
+<span class="material-symbols-outlined">contacts</span>
+</div>
+<h2 class="text-[#131118] text-lg font-bold leading-tight tracking-[-0.015em]">My Contacts</h2>
+</div>
+<div class="flex gap-2">
+<button class="hidden md:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#4A90E2] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all">
+<span class="truncate">Add Contact</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f3f8] text-[#131118] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all">
+<span class="truncate">Settings</span>
+</button>
+</div>
+</header>
+<div class="px-4 py-6">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-[#6b6189] flex border-none bg-white items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-[#131118] focus:outline-0 focus:ring-2 focus:ring-[#4A90E2] focus:ring-opacity-50 border-none bg-white h-full placeholder:text-[#6b6189] px-4 text-base font-normal leading-normal" placeholder="Search by name, email, etc." value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-3 px-4 py-3 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#E8F0FE] pl-4 pr-3 text-[#4A90E2] hover:bg-opacity-80 transition-all">
+<p class="text-sm font-medium leading-normal">Group</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#E4F8F4] pl-4 pr-3 text-[#50E3C2] hover:bg-opacity-80 transition-all">
+<p class="text-sm font-medium leading-normal">Tag</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#FDF4E6] pl-4 pr-3 text-[#F5A623] hover:bg-opacity-80 transition-all">
+<p class="text-sm font-medium leading-normal">Recently Added</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of John Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxw-pu-mGtSttFh_kJg8tLHQGt0fEOJauUSWmf3SC2zOZQHjPvUfQd0hYJXKF_CKwy9eldczjcUT2e3Ipgn0wVHUIK9R1HzI2V7zQREgH1FuncH1U5MZyC5mi0-7yKQlcHkUcHS91IzuTVv69V9uMKx05ufbfjjuFaf2H9L796Q7veKblsypogWyiKhsb-H8vcms-d7YJm2xu04bunijhIgwT7M4KIgcukV5bbqGbvmu27bnK81E6veSfx0K_d_e_kI4pfQtBU1U0");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">John Doe</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">john.doe@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of Jane Smith" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAID5BPOWpHOHfL1AvPhMbkuwcuUOEEeYmIXTQm9adhCQcISq1_23pvU9K3D8Owptakt5H6ZlrLBi7SPjNNCZU0LMqKDhzwi4oiorb6s0RJNHT8R-gSjvI7_BrbdbzU8ureD15KbJtS1EepHaZqodUhzfazp69FVUkrtTfU0Uw7GeF2QBOVFlem654gMVLij5tudon1nY1Cr4aFCj6b4mHGFI23aeEqQjcg7YQUzuefi1eqzZ1XA8ENRuUoxw6jOWB5eqRQiZydbqo");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">Jane Smith</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">jane.smith@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of Alex Johnson" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDiecc8cFKL1pGCCez8-fXinh34kpsD_R7Y7Jw3tyKypZjC27i6XbRRVi8PGHv4h1N714l08XyEkeLw_cnHjzGJw5T0TzeWhV22vjpRzrf-TrLuRe3gazMgCs3R21A5HzYpnJE2_P_sicGrzrhVUWZ272j2f3d7e1sGWE2uyRq06sz2dPd4RdxJAct8WrTbPF-zNpcor1GpwdmZK9zjMwIp3qPzm2tmfKECs5iXgoobiPCRVjIYD5CpqGCpP9Cm0nax2S5OSuHdCQ8");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">Alex Johnson</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">alex.johnson@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of Emily Brown" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgCM14VqqHutudLysBdBIe2XRcrMz3IyqfuOnSB6hGPt8LAtPTlOjWkzEmzAPQd7jScPSypdodP9sjfCrAwe1EuGJwRKIs1j7dAmJwIwi0I3ILnd1z-Cnz6-kE8Ja7XmIW4Lz_5w_bwErQ_MRs0Zpsg8athlIo1NJJqrXWz3BaNzHfzHZi_r2yvw_8piKvsl6_Pn2or_qioiGNuFBYucUDWGNg8j4xpF39i1Te_DKG0RLX-amSPwvLQckHO_nL29srItKRSxRmW3Y");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">Emily Brown</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">emily.brown@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of Michael Davis" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9l09HfH88lccloLSdOiT31apRs3C1SqCmeThmWRZEbuN4yzFDaZKo_bzyJwgHJVgu5J0T_sHXJx79bGxDuHuZQ6jhXQ6m_2TeWFxVQquuGvx_UokjOcHLXaXL1ul3-upzlsGFFm4MvSu6f-OmgJclvrKD2jkzQUiKelaPpxf0oJ1KKkyWu3WlwjVcmMDRatHl-tMs76zhyy_a3Jb805Y0UFMWDiJWzyXqcwEyak-nvNljXdBW76lna4Y4WcHozDEO22-fVgTkUT0");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">Michael Davis</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">michael.davis@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of Sarah Wilson" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQP_ywBZQAej4PKS3XOT8IZgjZnK4vbq7lQwIxV94ZHln-mbqXfGgyUcrBElY_3KN1Qr9ZsNGX104ExsLChe90f0GmdinT2jPnj19sW-2v3HFJO93ap6bkXigwKtB8wwylrjqe0KXsELfQbSX4PzPQKf1mFlq-u4P8lFqtXy39gUN_jhTMHrRFyVt71aoRtD76Mqo4ikpQh3nkQ6mlNnDEYp4ueE2u8U9RRLyFvfdkCixXlPPpi4rQxYSD-abIbqRkYRzhE82Q2gA");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">Sarah Wilson</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">sarah.wilson@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of David Martinez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD00RGxfHF6UgaYnSkADmekbBDgF_wWYS0nXhTksX1k4313l-0bNmUIQ7fmeFBclb6ZPDzdZt98S6H68bA6ypQYe7jBX69X0F3N2EM5SOPUQ-t7PLx2733ULuFFZmht-nd17x8glvjtHlA_n3ATaVmjpjIGYcOOnBKLBBrgtPPGv68behLH70MmV-Rd7M5TsqWxkaKkSurUyo6_ouXWnGQbHeZCvl7NDlw8xLAKLsWRYu5KBmiP55w36Z6GmY5-ZIlXYHpsKycdqq0");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">David Martinez</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">david.martinez@example.com</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 text-center pb-3 rounded-2xl bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Profile picture of Jennifer Garcia" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAejwu8it9K8E5rMw0kLUZpsD8UsNuYhSpHie3OFLE6iBUEs1xTS9YvgYXmtXeIroDePdLl2e8CquRfscUL9GgPHphW1CXq7uWgw4jf0Skm3umOk-fc_o64UT_cXsv9ynBO_OpEByVkIhpPZv8-zG9Jti7m2wQyHGfetG8k2U3-X66LaP-1I5MRlyQ0_Xcx081JAW2DQjkW7VlGk5eMEL0MMMd59kof26S_hXJVfMz28bDw4jA5VGQC_1b59mygQMGuqbM0yqD1_Ig");'></div>
+</div>
+<div>
+<p class="text-[#131118] text-base font-medium leading-normal">Jennifer Garcia</p>
+<p class="text-[#6b6189] text-sm font-normal leading-normal">jennifer.garcia@example.com</p>
+</div>
+</div>
+</div>
+<!-- Empty State Example -->
+<!-- 
+                    <div class="flex flex-col items-center justify-center text-center p-10 mt-10 border-2 border-dashed border-gray-300 rounded-2xl">
+                        <div class="text-6xl text-gray-400 mb-4">
+                            <span class="material-symbols-outlined">group</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">No contacts yet.</h3>
+                        <p class="text-gray-500 mb-6">Add your first contact to get started!</p>
+                        <button class="flex items-center justify-center gap-2 max-w-[480px] cursor-pointer rounded-xl h-12 px-6 bg-[#4A90E2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all">
+                            <span class="material-symbols-outlined">add</span>
+                            <span>Add Contact</span>
+                        </button>
+                    </div> 
+                    -->
+</div>
+</div>
+</div>
+<div class="fixed bottom-8 right-8 z-10">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-16 w-16 bg-[#4A90E2] text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+</div>
+</body></html>
