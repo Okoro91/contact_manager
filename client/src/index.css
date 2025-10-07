@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #6b46c1;
+  --color-secondary: #e9d8fd;
+  --color-accent: #f7fafc;
+
+  --primary: "#4913ec";
+  --background-light: "#fafafa";
+  --background-dark: "#151022";
+
+  --display: [ "Plus Jakarta Sans"];
+
+  --DEFAULT: "0.5rem";
+  --lg: "1rem";
+  --xl: "1.5rem";
+  --full: "9999px";
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
