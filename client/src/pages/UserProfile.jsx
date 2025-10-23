@@ -1,5 +1,4 @@
 import React from "react";
-import UserHeader from "../components/user/UserHeader";
 import UserMain from "../components/user/UserMain";
 
 const UserProfile = () => {
@@ -9,7 +8,6 @@ const UserProfile = () => {
         <div class="layout-container flex h-full grow flex-col">
           <div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
             <div class="layout-content-container flex flex-col w-full max-w-[1200px] flex-1">
-              <UserHeader />
               <UserMain />
             </div>
           </div>

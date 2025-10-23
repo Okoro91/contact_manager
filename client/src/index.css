@@ -18,3 +18,7 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+}
